@@ -14,5 +14,9 @@
     "nuxt": "^3.7.4",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@css-render/vue3-ssr": "^0.15.12",
+    "naive-ui": "^2.35.0"
   }
 }
