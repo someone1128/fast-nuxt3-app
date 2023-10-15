@@ -12,9 +12,20 @@ export default defineNuxtConfig({
             autoprefixer: {}
         }
     },
-    css: ['@/assets/css/tailwind.css'],
+
+    css: [
+        '@/assets/css/tailwind.css',
+        '@/assets/less/main.less',
+    ],
 
     build: {
+        // less
+        loaders: {
+            less: {
+                javascriptEnabled: true
+            }
+        },
+        // naive-ui
         transpile:
             process.env.NODE_ENV === 'production'
                 ? [

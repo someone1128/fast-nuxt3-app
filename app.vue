@@ -7,6 +7,7 @@
     <n-button secondary strong type="primary">
       Primary
     </n-button>
+    <h1>1231 <span>112</span></h1>
   </div>
 </template>
 
