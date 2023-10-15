@@ -1,27 +1,12 @@
 <template>
   <div>
     <!--<NuxtWelcome />-->
-    <n-space>
-      <n-button>Default</n-button>
-      <n-button type="tertiary">
-        Tertiary
-      </n-button>
-      <n-button type="primary">
-        Primary
-      </n-button>
-      <n-button type="info">
-        Info
-      </n-button>
-      <n-button type="success">
-        Success
-      </n-button>
-      <n-button type="warning">
-        Warning
-      </n-button>
-      <n-button type="error">
-        Error
-      </n-button>
-    </n-space>
+    <NButton size="medium" type="primary">
+      Primary
+    </NButton>
+    <n-button secondary strong type="primary">
+      Primary
+    </n-button>
   </div>
 </template>
 

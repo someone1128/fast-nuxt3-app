@@ -4,11 +4,13 @@
 
 安装：https://juejin.cn/post/7226651307527618619
 
-博客学习：https://juejin.cn/post/7186596767591301177#heading-0
+博客学习：
+
+- https://juejin.cn/post/7186596767591301177#heading-0
+
+- [Nuxt 3 学习笔记（五）项目结构和自动载入 (Auto Imports) - 掘金 (juejin.cn)](https://juejin.cn/post/7203681024235929655)
 
 ## nuxt 基本知识
-
-
 
 ## 集成
 
@@ -22,9 +24,15 @@ ts、tailwindcss、Axios（http请求工具）、less（css预处理器）、mom
 
 https://www.landingfolio.com/library/all/tailwind
 
-
-
 ## 集成组件
+
+### TailwindCss
+
+https://juejin.cn/post/7202526307329310777
+
+```
+npm install -D @nuxtjs/tailwindcss
+```
 
 ### Axios
 
