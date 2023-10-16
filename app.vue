@@ -13,4 +13,13 @@
 
 <script setup>
 
-import {NButton} from "naive-ui"</script>
+import {NButton} from "naive-ui"
+import {getListData} from "./server/api/apiHttps.ts";
+
+const handleGetData = async () => {
+  const result = await getListData("");
+  console.log("123", result);
+};
+
+handleGetData()
+</script>

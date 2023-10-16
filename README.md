@@ -14,7 +14,7 @@
 
 ## 集成
 
-ts、tailwindcss、Axios（http请求工具）、less（css预处理器）、moment（处理时间）、xicons（图标库）
+ts、tailwindcss、useFetch（http请求工具）、less（css预处理器）、moment（处理时间）、xicons（图标库）、
 
 国际化切换 i18n 分支
 
@@ -25,6 +25,8 @@ ts、tailwindcss、Axios（http请求工具）、less（css预处理器）、mom
 https://www.landingfolio.com/library/all/tailwind
 
 ## 集成组件
+
+官方：[Modules · Nuxt --- 模块 ·努克斯特](https://nuxt.com/modules)
 
 ### TailwindCss
 
@@ -48,5 +50,10 @@ yarn add @nuxtjs/i18n
 npm install @nuxtjs/i18n
 ```
 
+### Less
 
+[nuxt3 less-掘金 (juejin.cn)](https://juejin.cn/s/nuxt3 less)
 
+### Day.js（替代 moment）
+
+https://nuxt.com/modules/dayjs
