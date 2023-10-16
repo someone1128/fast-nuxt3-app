@@ -1,14 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: [
-        'dayjs-nuxt'
+        'dayjs-nuxt',
+        'nuxt-icon',
+        '@pinia/nuxt',
+        '@pinia-plugin-persistedstate/nuxt',
     ],
 
     dayjs: {
         locales: ['en', 'ja'],
         defaultLocale: 'en'
     },
-
 
     // 调试工具
     devtools: {enabled: true},
