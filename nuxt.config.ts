@@ -46,6 +46,7 @@ export default defineNuxtConfig({
                 ]
                 : ['@juggle/resize-observer']
     },
+
     vite: {
         // 避免外部化，将某些依赖项或模块从应用程序或库的构建输出中移除，然后将其视为外部资源，以在运行时动态加载。这通常用于优化构建输出文件的大小，提高加载性能，以及减少重复下载和执行相同的代码。
         ssr: {
