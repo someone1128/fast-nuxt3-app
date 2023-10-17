@@ -78,6 +78,8 @@ https://nuxt.com/modules/dayjs
 
 ### 目录说明
 
+[.nuxt/ · Nuxt Directory Structure](https://nuxt.com.cn/docs/guide/directory-structure/nuxt)
+
 ```
 - .nuxt               // 自动生成的目录，用于展示结果
 - node_modules        // 项目依赖包存放目录
@@ -96,6 +98,7 @@ https://nuxt.com/modules/dayjs
 - composables         // 代码模块化目录(可复用组合逻辑)
 - plugins             // 自定义插件目录
 - server              // 服务器目录
+- api                 // 自己封装的对外请求 api
 ```
 
 ### nuxt.config.js 配置
@@ -223,14 +226,14 @@ true的时候才会显示，然后其他时候他不显示。
 在开发中我们经常会有一些通用的业务逻辑代码，需要模块化管理，这时候就可以使用`composable` 这个文件夹来编写。
 
 ```js
-js复制代码--|composable 
+|composable 
 ----|time.ts
 ```
 
 页面中使用
 
 ```js
-js复制代码//getTime为time.ts中定义的方法名
+//getTime为time.ts中定义的方法名
 const time = ref(getTime());
 ```
 
@@ -354,6 +357,16 @@ app: {
       style: []
     }
   },
+```
+
+### 打包
+
+```
+# 生成用于服务器端运行的优化代码
+npm run build
+
+# 生成静态网站，将应用程序预渲染成静态 HTML 文件，无需服务器端渲染
+npm run generate
 ```
 
 ## Pinia

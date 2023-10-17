@@ -1,13 +1,25 @@
 <template>
   <div>
-    <cs>123</cs>
+    <!--<NuxtWelcome />-->
+    <NButton size="medium" type="primary">
+      Primary
+    </NButton>
+    <n-button secondary strong type="primary">
+      Primary
+    </n-button>
+    <h1>1231 <span>112</span></h1>
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 
+import {NButton} from "naive-ui"
+import {getListData} from "~/api/apiHttps.ts";
+
+const handleGetData = async () => {
+  const result = await getListData("");
+  console.log("123", result);
+};
+
+handleGetData()
 </script>
-
-<style scoped>
-
-</style>
