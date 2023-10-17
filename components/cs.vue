@@ -1,11 +1,12 @@
 <template>
-$END$
+<div>
+  hhh
+  <slot>???</slot>
+</div>
 </template>
 
-<script>
-export default {
-name: "cs"
-}
+<script lang="ts" setup>
+
 </script>
 
 <style scoped>

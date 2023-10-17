@@ -3,6 +3,7 @@
   <div>{{ counter.times }}</div>
 
   <button @click="change">改变pinia中的数据</button>
+
 </template>
 
 <script lang="ts" setup>

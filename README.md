@@ -1,3 +1,5 @@
+> 部分内容因误操作消失了，回头完善
+
 # nuxt 脚手架，开箱即用
 
 官网：https://nuxt.com.cn/docs/getting-started/introduction
@@ -18,11 +20,9 @@
 
 ## 集成的库
 
-ts、tailwindcss、useFetch（http请求工具）、less（css预处理器）、moment（处理时间）、xicons（图标库）、pinin+数据持久化存储
+ts、tailwindcss、useFetch（http请求工具）、less（css预处理器）、day.js（处理时间）、icons（图标库）、pinin+数据持久化存储
 
 国际化切换 i18n 分支
-
-[vue3使用naive ui库和xicons图标库 - 掘金 (juejin.cn)](https://juejin.cn/post/7153661226029940772)
 
 ### 配置 src
 

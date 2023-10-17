@@ -1,13 +1,11 @@
 <template>
   <div>
-    123
+    <cs>123</cs>
   </div>
 </template>
 
-<script>
-export default {
-  name: "index"
-}
+<script lang="ts" setup>
+
 </script>
 
 <style scoped>

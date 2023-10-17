@@ -1,6 +1,5 @@
 import {defineStore} from 'pinia'
 
-
 interface CounterState {
     times: number
     name: string
@@ -19,10 +18,10 @@ export const userCouter = defineStore('counter', {
         }
     },
 
-    //persist定义要做判断，因为localStorage是客户端参数，所以需要加process.client
+    //  // 使用 persist 选项将 times 属性保存到本地存储中
     persist: process.client && {
-        storage: localStorage,
-        paths: ['times']
+        storage: localStorage, // 只在客户端环境下生效
+        paths: ['times'] // 只保存 times 属性
     }
 
 })
