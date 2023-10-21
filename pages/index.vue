@@ -1,6 +1,9 @@
 <template>
   <div>
-    <!--<NuxtWelcome />-->
+    <div>
+      <h1>Home page</h1>
+      <NuxtLink to="/about">About page</NuxtLink>
+    </div>
     <NButton size="medium" type="primary">
       Primary
     </NButton>
@@ -8,18 +11,10 @@
       Primary
     </n-button>
     <h1>1231 <span>112</span></h1>
+    <NuxtLink to="/hello">hello</NuxtLink>
   </div>
 </template>
 
 <script setup>
 
-import {NButton} from "naive-ui"
-import {getListData} from "~/api/apiHttps.ts";
-
-const handleGetData = async () => {
-  const result = await getListData("");
-  console.log("123", result);
-};
-
-handleGetData()
-</script>
+import {NButton} from "naive-ui"</script>

@@ -18,19 +18,15 @@
 
 - [安装 Installation | Nuxt3中文文档 (gitee.io)](https://57code.gitee.io/nuxt3-docs-zh/getting-started/installation.html)
 
+> 当你看懂文档，熟练使用文档之后，就会发现，不做笔记也无所谓（我现在有点懒得写笔记了......）
+>
+> 啃好文档比啥都强
+
 ## 集成的库
 
-ts、tailwindcss、useFetch（http请求工具）、less（css预处理器）、day.js（处理时间）、icons（图标库）、pinin+数据持久化存储
+ts、tailwindcss、useFetch（http请求工具）、less（css预处理器）、day.js（处理时间）、icons（图标库）、pinia+数据持久化存储
 
 国际化切换 i18n 分支
-
-### 配置 src
-
-配置成平常的开发目录
-
-![image-20231016165628359](https://mrxc-1300093961.cos.ap-shanghai.myqcloud.com/ai-images/2023/5/12202310161656435.png)
-
-需要在 nuxt.config.ts 文件配置
 
 ## 推荐 tailwindcss 组件
 
@@ -361,9 +357,12 @@ app: {
 
 ### 打包
 
+[部署 · 开始使用Nuxt3 Nuxt中文站](https://nuxt.com.cn/docs/getting-started/deployment)
+
 ```
 # 生成用于服务器端运行的优化代码
 npm run build
+node .output/server/index.mjs
 
 # 生成静态网站，将应用程序预渲染成静态 HTML 文件，无需服务器端渲染
 npm run generate

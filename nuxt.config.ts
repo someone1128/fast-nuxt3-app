@@ -63,5 +63,8 @@ export default defineNuxtConfig({
         }
     },
 
-
+    // 页面过渡 https://nuxt.com.cn/docs/getting-started/transitions
+    app: {
+        pageTransition: {name: 'fade', mode: 'out-in'},
+    },
 })

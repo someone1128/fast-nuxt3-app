@@ -1,9 +1,11 @@
 <template>
-  <div>{{ counter.name }}</div>
-  <div>{{ counter.times }}</div>
+  <div>
+    <div>{{ counter.name }}</div>
+    <div>{{ counter.times }}</div>
 
-  <button @click="change">改变pinia中的数据</button>
-
+    <button @click="change">改变pinia中的数据</button>
+    <NuxtLink to="/">hello</NuxtLink>
+  </div>
 </template>
 
 <script lang="ts" setup>

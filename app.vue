@@ -5,17 +5,14 @@
   https://nuxt.com.cn/docs/guide/directory-structure/app
   记住那个 app.vue 作为Nuxt应用程序的主要组件。你添加的任何东西(JS和CSS)都是全局的，包含在每个页面中。
   -->
-    <div>
-      <NuxtLayout>
         <!--最大缓存 10 级页面，提升用户体验-->
         <NuxtPage :keepalive="{ max: 10 }"/>
-      </NuxtLayout>
-    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 
+// SEO 优化
 useSeoMeta({
   title: '哔哩哔哩 (゜-゜)つロ 干杯~-bilibili官方',
   description:
@@ -27,4 +24,14 @@ useSeoMeta({
 
 </script>
 
-<style scoped></style>
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+}
+</style>
